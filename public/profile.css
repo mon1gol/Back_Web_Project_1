@@ -1,0 +1,121 @@
+* {
+    font-family: Roboto;
+    font-style: normal;
+    padding: 0;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.profile-block {
+    margin-right: 5%;
+}
+
+.profile-privetstvie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 710px;
+    height: 261px;
+    padding-left: 15%;
+    margin-bottom: 5%;
+    background: white;
+    border-radius: 50px;
+}
+
+#profile-privetstvie {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 0.1em;
+    color: #292929;
+}
+
+.podtext {
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 32px;
+    color: #292929;
+}
+
+.buttons-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.profile-button {
+    width: 335px;
+    height: 140px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #292929;
+    background: white;
+    border-radius: 50px;
+}
+
+.smena-parol {
+    width: 710px;
+    height: 372px;
+    margin-bottom: 5%;
+    padding: 12%;
+    background: white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#smena-parol {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 37px;
+    color: #292929;
+}
+
+#smena-parol-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.smena-parol-input {}
+
+.smena-parol-button {}
+
+.opisanie-profile {
+    width: 600px;
+    height: 845px;
+    background: white;
+    margin-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 7%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opisanie-profile-icon {
+    height: 256px;
+    width: 256px;
+}
+
+.opisanie-data-block {
+    width: 85%;
+}
+
+.opisanie-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}

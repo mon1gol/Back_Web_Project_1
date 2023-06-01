@@ -1,0 +1,39 @@
+<h1>Редактировать {{post.title}}</h1>
+<div class="main-post blue lighten-5" style="margin:5% 5% 5% 5%;border-radius:20px;padding:5% 5% 5% 5%;">
+    <form action="/post/edit" method="POST">
+        <div class="create-post blue lighten-5">
+            <div class="input-field">
+                <textarea id="title" name="title" type="text" class="materialize-textarea" required>{{post.title}}</textarea>
+                <label for="text">Название поста</label>
+            </div>
+
+
+            <div class="input-field">
+                <textarea id="text" name="text" type="text" class="materialize-textarea" required>{{post.text}}</textarea>
+                <label for="text">Текст</label>
+            </div>
+
+            <input id="img" name="img" type="text" class="create-post-title" required value="{{post.img}}">
+            <span data-error="Введите URL картинки" data-success="right"></span>
+
+            {{!-- <div class="file-field input-field">
+                <div class="btn blue">
+                    <span>Файл</span>
+                    <input type="file">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div> --}}
+
+            <input type="hidden" name="id" value="{{post.id}}">
+
+            <button type="submit" class="btn-large blue create-post-button">Редактировать</button>
+        </div>
+    </form>
+
+    <form action="/post/remove" method="POST">
+        <input type="hidden" name="id" value="{{post.id}}">
+        <button class="btn-large red right" style="margin-right:14%;">Удалить</button>
+    </form>
+</div>

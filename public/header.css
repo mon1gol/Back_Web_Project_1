@@ -1,0 +1,40 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+*{
+    font-family: Roboto;
+    font-style: normal;
+    padding: 0;
+}
+
+.scrollable{
+    overflow: hidden;
+}
+
+  
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.2%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+
+.links-text{
+    margin-right: 10%;
+}
+
+.buttons{
+    display: flex;
+}

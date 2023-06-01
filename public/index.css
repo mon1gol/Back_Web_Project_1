@@ -1,0 +1,86 @@
+main {
+    margin-top: 15%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.titel {
+    width: 60%;
+    margin-bottom: 350px;
+}
+
+.subtitel {
+    color: #292929;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.titel-zagolovok {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 0.1em;
+    color: #292929;
+}
+
+.titel-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #292929;
+}
+
+.post-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    width: 1200px;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+}
+
+.post-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+.post-text-zagolovok {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 0.1em;
+    color: #292929;
+}
+
+.post-text-podzagolovok {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: #292929;
+}
+
+.post-text-data-autor {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: #292929;
+}
+
+.post-text-img {
+    height: 100px;
+    width: 100px;
+}

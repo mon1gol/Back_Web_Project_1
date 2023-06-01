@@ -1,0 +1,36 @@
+<nav>
+    <div class="nav-wrapper blue" style="padding-left:2%; padding-right:2%;">
+        <a href="/" class="brand-logo">Постик.ru</a>
+        <ul class="right hide-on-med-and-down">
+            {{#if isHome}}
+                <li class="active"><a href="/">Главная</a></li>
+            {{else}}
+                <li><a href="/">Главная</a></li>
+            {{/if}}
+
+            {{#if isAuth}}
+                {{#if isProfile}}
+                    <li class="active"><a href="/profile">Профиль</a></li>
+                {{else}}
+                    <li><a href="/profile">Профиль</a></li>
+                {{/if}}
+
+                {{#if isCreatePost}}
+                    <li class="active"><a href="/createPost">Создать пост</a></li>
+                {{else}}
+                    <li><a href="/createPost">Создать пост</a></li>
+                {{/if}}
+
+                {{!-- {{#if isMyPost}}
+                    <li class="active"><a href="/myPost">Мои посты</a></li>
+                {{else}}
+                    <li><a href="/myPost">Мои посты</a></li>
+                {{/if}} --}}
+
+                <button class="btn-small pink lighten-1"><a href="/auth/logout">Выйти</a></button>
+            {{else}}
+                <button class="btn-small pink lighten-1"><a href="/auth/login">Войти</a></button>
+            {{/if}}
+        </ul>
+    </div>
+</nav>

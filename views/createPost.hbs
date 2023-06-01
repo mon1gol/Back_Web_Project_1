@@ -1,0 +1,31 @@
+<div class="main-post">
+    <form action="/createPost" method="POST">
+        <div class="create-post blue lighten-5">
+            <div class="input-field">
+                <textarea id="title" name="title" type="text" class="materialize-textarea" required></textarea>
+                <label for="text">Название поста</label>
+            </div>
+
+
+            <div class="input-field">
+                <textarea id="text" name="text" type="text" class="materialize-textarea" required></textarea>
+                <label for="text">Текст</label>
+            </div>
+
+            <input id="img" name="img" type="text" class="create-post-title" required>
+            <span data-error="Введите URL картинки" data-success="right"></span>
+
+            {{!-- <div class="file-field input-field">
+                <div class="btn blue">
+                    <span>Файл</span>
+                    <input type="file">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div> --}}
+
+            <button class="btn-large blue create-post-button">Отправить</button>
+        </div>
+    </form>
+</div>

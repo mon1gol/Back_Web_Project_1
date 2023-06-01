@@ -1,0 +1,36 @@
+<main>
+    <div class="titel">
+        <div class="subtitel">ЭТО ПОДЗАГОЛОВОК</div>
+        <div class="titel-zagolovok">Здесь будет какой-то заголовок</div>
+        <div class="titel-text">Есть над чем задуматься: стремящиеся вытеснить традиционное производство, нанотехнологии
+            и по сей день остаются уделом либералов</div>
+    </div>
+
+    {{#if posts.length}}
+    {{#each posts}}
+    <div class="row">
+        <div class="col s6 offset-s3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{img}}">
+                    <span class="card-title">{{title}}</span>
+                    {{!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                            class="material-icons">add</i></a> --}}
+                </div>
+                <div class="card-content">
+                    <p>{{text}}</p>
+                    <div>Автор: </div>
+                    <div>Дата: </div>
+                    {{#if @root.isAuth}}
+                        <button class="btn-small right blue"><a href="post/{{id}}" class="white-text">Перейти</a></button>
+                        <button class="btn-small right blue"><a href="post/{{id}}/edit?allow=true" class="white-text">Редактировать</a></button>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+    {{else}}
+    <p>Создайте свой первый пост!</p>
+    {{/if}}
+</main>
